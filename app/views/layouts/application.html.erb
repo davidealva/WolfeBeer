@@ -2,16 +2,20 @@
 <html>
 <head>
   <title>Wolfe RootBeer | The worlds best tasing RootBeer Ever!</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+
   <%= csrf_meta_tags %>
+  <%= google_webfonts_init({
+    google: ['Lora', 'Montserrat']
+  }) %>
+  
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-target=".navbar-fixed-top">
 
 <%= render 'layouts/nav' %>
 
-	<%= yield %>
-
-
+<%= yield %>
+	
 </body>
 </html>
