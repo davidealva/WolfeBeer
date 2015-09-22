@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wolfe</title>
+  <title>Wolfe RootBeer | The worlds best tasing RootBeer Ever!</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<%= yield %>
+<%= render 'layouts/nav' %>
+
+	<%= yield %>
+
 
 </body>
 </html>

@@ -17,6 +17,10 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#Generate fake buyers to db
+gem 'faker'
+gem 'populator'
+
 group :production do 
 	gem 'pg'
 	gem 'rails_12factor'

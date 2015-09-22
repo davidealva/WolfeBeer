@@ -1,2 +1,14 @@
-<h1>StaticPages#who_loves_wolfe</h1>
-<p>Find me in app/views/static_pages/who_loves_wolfe.html.erb</p>
+<div id="who-loves" class="row">
+	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+		<h1>Who's buying Wolfe Beer?</h1>
+			<div ng-app="app" ng-controller="indexCtrl"> 
+
+			<ul>
+			  <li ng-repeat="buyer in buyers">
+			    {{ buyer.name + ', ' + buyer.city + ', ' + buyer.country }}
+			  </li>
+			</ul>
+			</div>
+	</div>
+</div>
+
