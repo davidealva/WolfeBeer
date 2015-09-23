@@ -10,25 +10,53 @@
 <div class="container">
 	<div id="who-loves" class="row">
 		<div class="col-sm-5 col-md-5">
-			<div class="row">
+			<div id="stats" class="row">
 				<h3>Here's how we're doing</h3>
-				<h4>Total Bottles Ordered: 15,210</h4>
-				<h4>Total Bottles Shipped: 36,632</h4>
-				<%= link_to 'Order Now', order_path, class: 'btn btn-default btn-lg' %>
+				<h4>Total Bottles Sold: <span>15,210</span></h4>
+				<h4>Total Bottles Shipped: <span>36,632</span></h4>
+				<%= link_to 'Order Yours Now', order_path, class: 'btn btn-default btn-lg' %>
 			</div>
-
-			<div class="row">
-			<h3>Instagram</h3>
+			<div id="social" class="row social-icons">
+				<h3>Follow Us</h3>
+				<ul class="nav navbar-nav navbar-left nav-pills">
+          <li><a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a></li>
+          <li><a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://pinterest.com"><i class="fa fa-pinterest-square"></i></a></li>
+        </ul>
+			</div>
+			<div id="instagram" class="row">
+				<h3>Instagram</h3>
 				<div class="col-md-6 thumb">
           <a class="thumbnail" href="#">
-              <img class="img-responsive" src="http://placehold.it/150x150" alt="">
+            <%= image_tag('inst1.jpg', size: '200') %>
           </a>
         </div>
         <div class="col-md-6 thumb">
           <a class="thumbnail" href="#">
-              <img class="img-responsive" src="http://placehold.it/150x150" alt="">
+           	<%= image_tag('inst2.jpg', size: '200') %>
           </a>
         </div>
+        <div class="col-md-6 thumb">
+          <a class="thumbnail" href="#">
+            <%= image_tag('inst3.jpg', size: '200') %>
+          </a>
+        </div>
+        <div class="col-md-6 thumb">
+          <a class="thumbnail" href="#">
+            <%= image_tag('inst4.jpg', size: '200') %>
+          </a>
+        </div>
+        <div class="col-md-6 thumb">
+          <a class="thumbnail" href="#">
+            <%= image_tag('inst5.jpg', size: '180') %>
+          </a>
+        </div>
+        <div class="col-md-6 thumb">
+          <a class="thumbnail" href="#">
+            <%= image_tag('inst6.jpg', size: '180') %>
+          </a>
+        </div>        
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-6 col-md-offset-1">
@@ -54,6 +82,9 @@
 </div>
 
 <footer>
+<div class="container">
+  <p class="navbar-left"><a href="#">Wolfe Beer - The worlds greatest root beer | 2015</a></p>
+</div>
 	
 </footer>
 
