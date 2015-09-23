@@ -1,0 +1,16 @@
+<div ng-app"app" ng-show="step == 2">
+	<div class="jumbotron">
+		<div class="container">
+			<h2>Payment Details</h2>
+			<p>Credit card or payment details entered here.</p>
+		</div>
+	</div>
+	<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="pull-right">
+        <%= link_to 'Cancel', root_path, class: "btn btn-default" %>
+        <button type="submit" class="btn btn-primary" ng-click="nextStep()">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
