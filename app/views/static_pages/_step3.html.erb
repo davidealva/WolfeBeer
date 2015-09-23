@@ -1,0 +1,17 @@
+<div ng-app"app" ng-show="step == 3">
+	<div class="jumbotron">
+		<div class="container">
+			<h2>Confirm your order</h2>
+			<p>The details of the order would be reviewed here and then sent to Stripe via the Rails Stripe gem, and create a transaction in the Rails model to record the transaction</p>
+		</div>
+	</div>
+			
+	<div class="form-group">
+	  <div class="col-sm-offset-2 col-sm-10">
+	    <div class="pull-right">
+	      <%= link_to 'Cancel', root_path, class: "btn btn-default" %>
+	     	<%= link_to 'Checkout', root_path, class: "btn btn-warning" %>
+	    </div>
+	  </div>
+	</div>
+</div>

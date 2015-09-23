@@ -5,111 +5,29 @@
 				<%= image_tag('icon.png', size: '150') %>
 			</div>
 			<div class="stepwizard">
-			    <div class="stepwizard-row setup-panel">
-			        <div class="stepwizard-step">
-			            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-			            <p></p>
-			        </div>
-			        <div class="stepwizard-step">
-			            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-			            <p></p>
-			        </div>
-			        <div class="stepwizard-step">
-			            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-			            <p></p>
-			        </div>
-			    </div>
+		    <div class="stepwizard-row setup-panel">
+	        <div class="stepwizard-step">
+            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+            <p>Step 1</p>
+	        </div>
+	        <div class="stepwizard-step">
+            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+            <p>Step 2</p>
+	        </div>
+	        <div class="stepwizard-step">
+            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+            <p>Step 3</p>
+	        </div>
+		    </div>
 			</div>
 			<form action="#" class="form-horizontal" role="form" ng-controller="formCtrl">
-				<fieldset ng-show="step == 1">
-					<div class="form-group">
-						<label class="col-sm-2 control-label" for="">Name</label>
-						<div class="col-sm-10">
-						<input type="text" class="form-control" id="" placeholder="">
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-sm-2 control-label" for="">Address</label>
-						<div class="col-sm-10">
-						<input type="text" class="form-control" id="" placeholder="">
-						</div>
-					</div>
-					<!-- Text input-->
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="textinput">City</label>
-            <div class="col-sm-10">
-              <input type="text" placeholder="City" class="form-control">
-            </div>
-          </div>
-
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="textinput">State</label>
-            <div class="col-sm-4">
-              <input type="text" placeholder="State" class="form-control">
-            </div>
-
-            <label class="col-sm-2 control-label" for="textinput">Postcode</label>
-            <div class="col-sm-4">
-              <input type="text" placeholder="Post Code" class="form-control">
-            </div>
-          </div>
-					<div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <div class="pull-right">
-                <%= link_to 'Cancel', root_path, class: "btn btn-default" %>
-                <button type="submit" class="btn btn-primary" ng-click="nextStep()">Continue</button>
-              </div>
-            </div>
-          </div>
-
-				</fieldset>
-
-				<fieldset ng-show="step == 2">
-					<div class="form-group">
-						<label for="">Credit Card</label>
-						<input type="text" class="form-control" id="" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="">CCV</label>
-						<input type="text" class="form-control" id="" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="">Expiration Date</label>
-						<input type="text" class="form-control" id="" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="">State</label>
-						<input type="text" class="form-control" id="" placeholder="US State">
-					</div>
-					<button class="btn btn-primary" ng-click="nextStep()">Continue</button>
-				</fieldset>
-
-				<fieldset ng-show="step == 3">
-					<div class="form-group">
-						<label for="">Credit Card</label>
-						<input type="text" class="form-control" id="" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="">CCV</label>
-						<input type="text" class="form-control" id="" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="">Expiration Date</label>
-						<input type="text" class="form-control" id="" placeholder="">
-					</div>
-					<div class="form-group">
-						<label for="">State</label>
-						<input type="text" class="form-control" id="" placeholder="US State">
-					</div>
-					<button class="btn btn-primary" ng-click="submitForm()">Checkout</button>
-				</fieldset>
+				<%= render 'static_pages/step1' %>
+				<%= render 'static_pages/step2' %>
+				<%= render 'static_pages/step3' %>
 			</form>
 		</div>
 	</div>
 </div>
-<footer class="footer-light">
-
-</footer>
+<footer class="footer-light"></footer>
 
 
