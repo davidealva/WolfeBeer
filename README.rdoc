@@ -1,4 +1,29 @@
-Landing page for Wolfe Beer, the worlds most amazing tasting Rootbeer ever...
+####Landing page for Wolfe Beer, the worlds most amazing tasting Rootbeer ever...
+
+This app is a Ruby on Rails app with an AngularJS frontend. Rails is being
+used to serve up a simple JSON api and can be seen at:
+
+http://localhost:3000/buyers.json
+
+***To set up and run app locally:***
+
+git clone https://github.com/davidealva/WolfeBeer.git
+
+***Then run:***
+
+bundle install
+
+rake db:migrate 
+
+***Sample data for the feed is created by Faker gem, please run***
+
+rake db:populate
+
+***And now the app is ready to run at ***
+
+http://localhost:3000
+
+
 
 This app is a Ruby on Rails app with an AngularJS frontend. Rails is being
 used to serve up a simple JSON api and can be seen at:

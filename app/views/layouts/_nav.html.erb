@@ -4,15 +4,21 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
         <i class="fa fa-bars"></i>
       </button>
-      <%= link_to 'Wolfe Beer', root_path, class: 'navbar-brand' %>
+      <% if controller_name == 'static_pages' && action_name == 'order' %>
+        <%= link_to root_path, class: 'navbar-brand' do %>
+          <%= image_tag('logo_blue.png', class: 'pull-left') %>
+          Wolfe Beer
+        <% end %>
+      <% else %>
+        <%= link_to root_path, class: 'navbar-brand' do %>
+          <%= image_tag('logo.png', class: 'pull-left') %>
+          Wolfe Beer
+        <% end %>
+      <% end %>
     </div>
 
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-        <li class="hidden">
-          <a href="#page-top"></a>
-        </li>
         <li>
           <%= link_to 'Who Loves Wolfe?', who_loves_wolfe_path %>
         </li>
