@@ -22,6 +22,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'faker'
 gem 'populator'
 
+# Needed for Heroku Deployment
 group :production do 
 	gem 'pg'
 	gem 'rails_12factor'
