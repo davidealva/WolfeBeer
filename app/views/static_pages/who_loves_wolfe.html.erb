@@ -1,7 +1,38 @@
+<!-- Intro Header -->
+<header class="intro-2">
+  <div class="intro-body">
+    <div class="container">
+      <h3>Organic all natural ingredients, clean spring water, bottled by elves, and sustainably brewed with unicorn dust...</h3>
+    </div>
+  </div>
+</header>
+
 <div class="container">
 	<div id="who-loves" class="row">
-		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-			<h1>Who's buying Wolfe Beer?</h1>
+		<div class="col-sm-5 col-md-5">
+			<div class="row">
+				<h3>Here's how we're doing</h3>
+				<h4>Total Bottles Ordered: 15,210</h4>
+				<h4>Total Bottles Shipped: 36,632</h4>
+				<%= link_to 'Order Now', order_path, class: 'btn btn-default btn-lg' %>
+			</div>
+
+			<div class="row">
+			<h3>Instagram</h3>
+				<div class="col-md-6 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="http://placehold.it/150x150" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 thumb">
+          <a class="thumbnail" href="#">
+              <img class="img-responsive" src="http://placehold.it/150x150" alt="">
+          </a>
+        </div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-6 col-md-offset-1">
+			<h3>Who's buying Wolfe Beer?</h3>
 				<div ng-app="app" ng-controller="indexCtrl"> 
 					<ul class="media-list" ng-repeat="buyer in buyers">
 					  <li class="media">
@@ -21,4 +52,8 @@
 		</div>
 	</div>
 </div>
+
+<footer>
+	
+</footer>
 

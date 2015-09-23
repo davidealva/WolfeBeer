@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def who_loves_wolfe
   end
+
+  def order
+  end
 end

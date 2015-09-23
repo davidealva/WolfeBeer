@@ -1,9 +1,9 @@
 namespace :db do
-  desc "Create 100 buyers"
+  desc "Create 10 buyers"
   task :populate => :environment do
 	require 'populator'
 	require 'faker'
-	  Buyer.populate 100 do |b|
+	  Buyer.populate 10 do |b|
 	  b.avatar = Faker::Avatar.image
 		b.name = Faker::Name.name
 		b.city = Faker::Address.city

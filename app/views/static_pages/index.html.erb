@@ -1,16 +1,14 @@
-  <!-- Intro Header -->
-  <header class="intro">
-    <div class="intro-body">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1 class="brand-heading">WolfeBeer</h1>
-            <p class="intro-text">The worlds best tasting craft brew Rootbeer.<br>Are you ready for some?...</p>
-            <a href="#about" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
-          </div>
-        </div>
+<!-- Intro Header -->
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+        <div id="branding" class="col-md-8 col-md-offset-2">
+          <%= image_tag('icon.png', size: '320') %>
+          <p class="intro-text">Small batch, hand crafted, simpley the worlds best root beer ...period.</p>
+          <%= link_to 'Order Yours Now', order_path, class: 'btn btn-default btn-lg' %>
+        </div>    
       </div>
     </div>
-  </header>
+  </div>
+</header>
